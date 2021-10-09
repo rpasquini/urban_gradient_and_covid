@@ -29,10 +29,10 @@ Una modelización simplificada que proponemos inicialmente para identificar el g
 Para identificar el efecto de la pandemia, utilizamos una especificación de Diferencias en Diferencias, donde examinamos cómo el gradiente se transformó en el período posterior a marzo de 2020.
 
 Más específicamente, para cada ciudad, estimamos el siguiente modelo:
-$$
-alquiler_i=\beta_0+\beta_1distanciaC_i+\beta_2Post+\beta_3(distanciaC_i * Post_t)+\epsilon_i
-$$
-donde $alquiler_i$ es el valor de alquiler de la iesima oferta en la ciudad respectiva, $distanciaC_i$ es la distancia al centro de negocios en metros, y  $Post_t$ es una variable dummy que identifica si la oferta fue realizada posterior a marzo 2020 y 0 de otro modo.  En este modelo, el coeficiente $\beta_1$ capturará la pendiente del gradiente lineal (i.e., el descuento por metro de distancia al centro de negocios),  $\beta_2$ en la ecuacion identifica el cambio en el valor promedio ocurrido en el período de la pandemia. Por último, el coeficiente  $\beta_3$ busca identificar el efecto de interés, esto es, el cambio del gradiente ocurrido en el período de la pandemia.
+
+<img src="https://latex.codecogs.com/gif.latex?alquiler_i=\beta_0+\beta_1distanciaC_i+\beta_2Post+\beta_3(distanciaC_i * Post_t)+\epsilon_i " />
+
+donde <img src="https://latex.codecogs.com/gif.latex?alquiler_i " /> es el valor de alquiler de la iesima oferta en la ciudad respectiva, <img src="https://latex.codecogs.com/gif.latex?distanciaC_i " /> es la distancia al centro de negocios en metros, y  <img src="https://latex.codecogs.com/gif.latex?Post_t " /> es una variable dummy que identifica si la oferta fue realizada posterior a marzo 2020 y 0 de otro modo.  En este modelo, el coeficiente <img src="https://latex.codecogs.com/gif.latex?\beta_1 " /> capturará la pendiente del gradiente lineal (i.e., el descuento por metro de distancia al centro de negocios),  <img src="https://latex.codecogs.com/gif.latex?\beta_2 " /> en la ecuacion identifica el cambio en el valor promedio ocurrido en el período de la pandemia. Por último, el coeficiente <img src="https://latex.codecogs.com/gif.latex?\beta_3 " /> busca identificar el efecto de interés, esto es, el cambio del gradiente ocurrido en el período de la pandemia.
 
 ## Resultados Preliminares
 Los siguientes gráficos presentan los gradientes estimados por la específicación del modelo propuesta para cada una de las ciudades.
@@ -45,3 +45,6 @@ Los siguientes gráficos presentan los gradientes estimados por la específicaci
 ![Quito](https://github.com/rpasquini/urban_gradient_and_covid/blob/main/graphs/gradient_quito.png?raw=true)
 ![Lima](https://github.com/rpasquini/urban_gradient_and_covid/blob/main/graphs/gradient_lima.png?raw=true)
 ![Montevideo](https://github.com/rpasquini/urban_gradient_and_covid/blob/main/graphs/gradient_montevideo.png?raw=true)
+
+
+
