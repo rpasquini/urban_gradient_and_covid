@@ -1,14 +1,3 @@
-# Urban gradient in rental values and Covid
-In this project we explore changes to the urban prices gradient due to the effects of COVID-19 pandemic, across a number of selected cities in LATAM. 
-
-Cities exhibit urban gradients, defined as increases in land prices as 
-
-Data: https://www.properati.com.ar/data/
-
-
-
-
-
 # Gradiente urbano en valores de alquiler y Covid 
 En este proyecto exploramos cambios en el gradiente urbano de precios atribuíbles a la pandemia del COVID-19 en un conjunto de ciudades de América Latina.
 
@@ -30,7 +19,8 @@ Para identificar el efecto de la pandemia, utilizamos una especificación de Dif
 
 Más específicamente, para cada ciudad, estimamos el siguiente modelo:
 
-<img src="https://latex.codecogs.com/gif.latex?alquiler_i=\beta_0+\beta_1distanciaC_i+\beta_2Post+\beta_3(distanciaC_i * Post_t)+\epsilon_i " />
+![equation](https://latex.codecogs.com/png.latex?alquiler_i%3D%5Cbeta_0&plus;%5Cbeta_1distanciaC_i&plus;%5Cbeta_2Post&plus;%5Cbeta_3%28distanciaC_i%20*%20Post_t%29&plus;%5Cepsilon_i)
+
 
 donde <img src="https://latex.codecogs.com/gif.latex?alquiler_i " /> es el valor de alquiler de la iesima oferta en la ciudad respectiva, <img src="https://latex.codecogs.com/gif.latex?distanciaC_i " /> es la distancia al centro de negocios en metros, y  <img src="https://latex.codecogs.com/gif.latex?Post_t " /> es una variable dummy que identifica si la oferta fue realizada posterior a marzo 2020 y 0 de otro modo.  En este modelo, el coeficiente <img src="https://latex.codecogs.com/gif.latex?\beta_1 " /> capturará la pendiente del gradiente lineal (i.e., el descuento por metro de distancia al centro de negocios),  <img src="https://latex.codecogs.com/gif.latex?\beta_2 " /> en la ecuacion identifica el cambio en el valor promedio ocurrido en el período de la pandemia. Por último, el coeficiente <img src="https://latex.codecogs.com/gif.latex?\beta_3 " /> busca identificar el efecto de interés, esto es, el cambio del gradiente ocurrido en el período de la pandemia.
 
