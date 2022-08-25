@@ -55,7 +55,7 @@ def queryproperaty(credentials, ciudad):
 
     # Aqui se define el pedido en formato SQL.
     QUERY = (
-    'SELECT * FROM `properati-dw.public.ads` WHERE start_date >= "2019-05-01" AND start_date <= "2021-05-15" AND type = "Propiedad" '
+    'SELECT * FROM `properati-dw.public.ads` WHERE start_date >= "2019-05-01" AND start_date <= "2022-05-15" AND type = "Propiedad" '
     #'AND place.l1 = "Argentina" '
     'AND property.type = "Departamento" '
     'AND property.operation = "Alquiler" '
@@ -136,7 +136,7 @@ def export_to_shapefile(gdf2, ciudad):
     gdf2=gdf2.drop(columns=['start_date','end_date','created_on','description','place'])
     gdf2=gdf2.drop(columns=['id'])
 
-    gdf2.to_file("data\\"+ciudad+".shp")
+    gdf2.to_file("data//2022//"+ciudad+".shp")
 
 
 def inflationadjustment(gdf2):
